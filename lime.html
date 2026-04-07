@@ -1,176 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lime | Portfolio</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      min-height: 100%;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #00ff7f, #32cd32, #006400);
-      color: #ffffff;
-    }
-    header {
-      text-align: center;
-      padding: 60px 20px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    .intro {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: auto;
-      opacity: 0.85;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    .card {
-      background: rgba(0,0,0,0.6);
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-    .title {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      color: #ffffff;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 12px;
-    }
-    li em {
-      display: block;
-      margin-top: 5px;
-      font-style: italic;
-      opacity: 0.85;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lime | Portfolio</title>
+
+<style>
+html, body {
+  margin: 0;
+  padding: 80px 0 0 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #00ff7f, #32cd32, #006400);
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.intro {
+  max-width: 800px;
+  margin: auto;
+  opacity: 0.85;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.card {
+  background: rgba(0,0,0,0.65);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+li em {
+  display: block;
+  opacity: 0.85;
+}
+
+/* MENU */
+.menu {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+}
+
+.menu-btn {
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid #fff;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dropdown {
+  list-style: none;
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(0,0,0,0.85);
+  border-radius: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-container:hover .dropdown {
+  max-height: 300px;
+}
+</style>
 </head>
+
 <body>
-<!-- Top-left menu -->
+
 <nav class="menu">
   <div class="menu-container">
-    <button class="menu-btn">Menu ▼</button>
+    <button class="menu-btn">Menu ☰</button>
     <ul class="dropdown">
       <li><a href="index.html">Home</a></li>
       <li><a href="lime.html">Lime</a></li>
       <li><a href="water.html">Water</a></li>
-      <li><a href="combined.html">Combined Work</a></li>
+      <li><a href="combined.html">Combined</a></li>
     </ul>
   </div>
 </nav>
 
-<style>
-  /* Menu styles */
-  .menu {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 100;
-  }
-  .menu-container {
-    position: relative;
-  }
-  .menu-btn {
-    background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    padding: 6px 12px;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  .menu-btn:hover {
-    background: rgba(255,255,255,0.1);
-  }
-  .dropdown {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: transparent;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-  }
-  .dropdown li a {
-    display: block;
-    padding: 8px 12px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background 0.3s;
-  }
-  .dropdown li a:hover {
-    background: rgba(255,255,255,0.1);
-  }
-  .menu-container:hover .dropdown {
-    max-height: 500px;
-  }
-</style>
 <header>
-  <h1>Lime</h1>
-  <div class="intro">
-    Passionate and experienced community moderator and server manager, adept at building, organizing, and maintaining dynamic online communities across multiple platforms. Skilled in team leadership, conflict resolution, and improving server systems to create safe and engaging environments for members.
-  </div>
+<h1>Lime</h1>
+<div class="intro">
+Passionate and experienced community moderator and server manager...
+</div>
 </header>
 
-<section id="lime">
-  <h2>Experience</h2>
-
-  <div class="card">
-    <div class="title">Administration & Leadership</div>
-    <ul>
-      <li>DonOboro's Community (Twitch Content Creator)
-        <em>Administrator: Oversees server operations, manages staff, enforces rules, and ensures a safe and welcoming community environment. Coordinates events and implements server improvements.</em>
-      </li>
-      <li>Mighty Assassins [MightFreedy (YouTube Content Creator)]
-        <em>Administrator: Oversees server operations, manages staff, enforces rules, and ensures a safe and welcoming community environment. Coordinates events and implements server improvements.</em>
-      </li>
-      <li>The Warzone [WarInJapan (YouTube Content Creator)]
-        <em>Administrator: Oversees server operations, manages staff, enforces rules, and ensures a safe and welcoming community environment. Coordinates events and implements server improvements.</em>
-      </li>
-      <li>YoBoiMark !llusive - [YoBoiMark (Twitch Content Creator)]
-        <em>Co-Owner and Head Administrator: Shares ownership responsibilities, including managing staff, server development, strategic decisions, and community growth. Works closely with other co-owners to maintain a thriving server.</em>
-      </li>
-      <li>MrCho's Empire (Twitch Content Creator)
-        <em>Administrator: Oversees server operations, manages staff, enforces rules, and ensures a safe and welcoming community environment. Coordinates events and implements server improvements.</em>
-      </li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <div class="title">Moderation & Management</div>
-    <ul>
-      <li>EX GANG [Omega EX (YouTube Content Creator)]
-        <em>Server Manager and Moderator: Responsible for daily server operations, organizing roles, managing bots, monitoring channels, and implementing improvements to enhance user experience and engagement.</em>
-      </li>
-      <li>Ninja Destiny (Roblox Game)
-        <em>Community Manager: Focuses on building a positive and active community by engaging members, responding to inquiries, organizing events, and fostering interaction across all platforms.</em>
-      </li>
-      <li>Ikari no Shisha (AOTR based community server)
-        <em>Moderator: Maintains order within the server, enforces rules, resolves disputes, assists members, and supports the staff team in keeping the server safe and friendly.</em>
-      </li>
-      <li>Wings of Freedom (AOTR based community server)
-        <em>Trial Moderator: Maintains order within the server, enforces rules, resolves disputes, assists members, and supports the staff team in keeping the server safe and friendly.</em>
-      </li>
-    </ul>
-  </div>
-
+<section>
+<div class="card">
+<div class="title">Administration & Leadership</div>
+<ul>
+<li>DonOboro's Community <em>Administrator...</em></li>
+<li>Mighty Assassins <em>Administrator...</em></li>
+</ul>
+</div>
 </section>
 
 </body>

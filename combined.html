@@ -1,151 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Combined Work | Portfolio</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      min-height: 100vh;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #32cd32, #ff6fd8);
-      background-attachment: fixed;
-      color: #ffffff;
-    }
-    header {
-      text-align: center;
-      padding: 60px 20px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    .intro {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: auto;
-      opacity: 0.85;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    .card {
-      background: rgba(0,0,0,0.6);
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-    .title {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 12px;
-    }
-    li em {
-      display: block;
-      margin-top: 5px;
-      font-style: italic;
-      opacity: 0.85;
-    }
-    p {
-      margin-top: 10px;
-      opacity: 0.85;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Combined Work</title>
+
+<style>
+html, body {
+  margin: 0;
+  padding: 80px 0 0 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #32cd32, #ff6fd8);
+  background-attachment: fixed;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.card {
+  background: rgba(0,0,0,0.65);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* MENU */
+.menu {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+}
+
+.menu-btn {
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid #fff;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.dropdown {
+  list-style: none;
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(0,0,0,0.85);
+  border-radius: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.menu-container:hover .dropdown {
+  max-height: 300px;
+}
+</style>
 </head>
+
 <body>
-<!-- Top-left menu -->
+
 <nav class="menu">
   <div class="menu-container">
-    <button class="menu-btn">Menu ▼</button>
+    <button class="menu-btn">Menu ☰</button>
     <ul class="dropdown">
       <li><a href="index.html">Home</a></li>
       <li><a href="lime.html">Lime</a></li>
       <li><a href="water.html">Water</a></li>
-      <li><a href="combined.html">Combined Work</a></li>
+      <li><a href="combined.html">Combined</a></li>
     </ul>
   </div>
 </nav>
 
-<style>
-  /* Menu styles */
-  .menu {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 100;
-  }
-  .menu-container {
-    position: relative;
-  }
-  .menu-btn {
-    background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    padding: 6px 12px;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  .menu-btn:hover {
-    background: rgba(255,255,255,0.1);
-  }
-  .dropdown {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: transparent;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-  }
-  .dropdown li a {
-    display: block;
-    padding: 8px 12px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background 0.3s;
-  }
-  .dropdown li a:hover {
-    background: rgba(255,255,255,0.1);
-  }
-  .menu-container:hover .dropdown {
-    max-height: 500px;
-  }
-</style>
 <header>
-  <h1>Lime & Water</h1>
-  <div class="intro">
-    A collaborative portfolio showcasing the combined work of Lime and Water in community moderation, server management, and content creation. Highlighting teamwork, leadership, and server optimization across multiple platforms.
-  </div>
+<h1>Lime & Water</h1>
 </header>
 
-<section id="combined">
-  <h2>Combined Work</h2>
-
-  <div class="card">
-    <div class="title">Shared Administration</div>
-    <ul>
-      <li>Vesperenity [9alltheway (TikTok Content Creator)]
-        <em>Co-Owners: Share ownership responsibilities, including managing staff, server development, strategic decisions, and community growth. Work together to maintain a thriving server environment.</em>
-      </li>
-    </ul>
-  </div>
-
+<section>
+<div class="card">
+<div class="title">Combined Work</div>
+<p>Shared projects and collaborations...</p>
+</div>
 </section>
 
 </body>

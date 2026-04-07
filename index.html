@@ -1,69 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lime & Water | Portfolio</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      min-height: 100vh;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #32cd32, #ff6fd8); /* Combined Work gradient */
-      background-attachment: fixed; /* ensures gradient covers scrolling */
-      color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lime & Water | Portfolio</title>
 
-    .container {
-      max-width: 600px;
-    } 
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #32cd32, #ff6fd8);
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-    .quote {
-      font-size: 1.5rem;
-      margin-bottom: 40px;
-      opacity: 0.8;
-    }
+.container {
+  max-width: 600px;
+  padding: 20px;
+}
 
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
+.quote {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
 
-    .btn {
-      padding: 12px 24px;
-      border: 1px solid #444;
-      border-radius: 10px;
-      text-decoration: none;
-      color: white;
-      transition: 0.3s ease;
-    }
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-    .btn:hover {
-      background: white;
-      color: black;
-    }
-  </style>
+.btn {
+  padding: 12px 24px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+</style>
 </head>
+
 <body>
 
-  <div class="container">
-    <div class="quote">
-      Two minds, one vision, endless possibilities
-    </div>
-
-    <div class="buttons">
-      <a href="lime.html" class="btn">Lime</a>
-      <a href="water.html" class="btn">Water</a>
-      <a href="combined.html" class="btn">Combined</a>
-    </div>
+<div class="container">
+  <div class="quote">
+    Two minds, one vision, endless possibilities
   </div>
+
+  <div class="buttons">
+    <a href="lime.html" class="btn">Lime</a>
+    <a href="water.html" class="btn">Water</a>
+    <a href="combined.html" class="btn">Combined</a>
+  </div>
+</div>
 
 </body>
 </html>
