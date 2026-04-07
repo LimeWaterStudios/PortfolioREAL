@@ -8,7 +8,7 @@
   <style>
     html, body {
       margin: 0;
-      padding: 80px 0 0 0; /* FIX OVERLAP */
+      padding: 80px 0 0 0; /* prevents menu overlap */
       min-height: 100vh;
       font-family: Arial, sans-serif;
       background: linear-gradient(to bottom right, #1e3c72, #2a5298, #ff6fd8, #ffb6c1);
@@ -16,66 +16,118 @@
       color: #ffffff;
     }
 
-    /* MENU FIX (MATCHES OTHER PAGES) */
-.menu {
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  z-index: 1000;
-}
+    /* ===== MENU (NOW MATCHES ALL PAGES) ===== */
+    .menu {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 1000;
+    }
 
-.menu-container {
-  position: relative;
-}
+    .menu-container {
+      position: relative;
+    }
 
-.menu-btn {
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(8px);
-  border: 1px solid #fff;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
+    .menu-btn {
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(8px);
+      border: 1px solid #fff;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
-.menu-btn:hover {
-  background: rgba(255,255,255,0.1);
-}
+    .menu-btn:hover {
+      background: rgba(255,255,255,0.1);
+    }
 
-.dropdown {
-  list-style: none;
-  margin-top: 10px;
-  padding: 10px;
-  background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
+    .dropdown {
+      list-style: none;
+      margin-top: 10px;
+      padding: 10px;
+      background: rgba(0,0,0,0.85);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
 
-.dropdown li a {
-  display: block;
-  padding: 8px;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: 0.3s;
-}
+    .dropdown li a {
+      display: block;
+      padding: 8px;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
 
-.dropdown li a:hover {
-  background: rgba(255,255,255,0.1);
-}
+    .dropdown li a:hover {
+      background: rgba(255,255,255,0.1);
+    }
 
-.menu-container:hover .dropdown {
-  max-height: 300px;
-}
+    .menu-container:hover .dropdown {
+      max-height: 300px;
+    }
+
+    /* ===== CONTENT ===== */
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: auto;
+      opacity: 0.85;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    li em {
+      display: block;
+      margin-top: 5px;
+      font-style: italic;
+      opacity: 0.85;
+    }
   </style>
 </head>
 
 <body>
 
+<!-- MENU -->
 <nav class="menu">
   <div class="menu-container">
     <button class="menu-btn">Menu ☰</button>
@@ -88,6 +140,7 @@
   </div>
 </nav>
 
+<!-- CONTENT -->
 <header>
   <h1>Water</h1>
   <div class="intro">
